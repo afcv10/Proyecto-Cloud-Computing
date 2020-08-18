@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+header {
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    background-color: rgb(34, 97, 180);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 1987;
+    font-weight: 600;
+    color: white;
+  }
+  #header-logo{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    transition: background-color 700ms;
+  }
+
+  #header-logo:hover{
+    background-color: rgb(28, 80, 148);
+    cursor: pointer;
+  }
+
+  #introduction{
+    background-image: url("../assets/bg.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: white;
+
+  }
+
+  #services{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+  }
+  #start{
+    background-image: url("../assets/taxidriver.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 250px;
+  }
+  #start-text{
+    margin-left: 30vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    transition: font-size 1s;
+  }
+  #start-text:hover{
+    cursor: pointer;
+    font-size: 50px;
+  }
+  #header-options{
+    margin-left: 1000px;
+    /* height: 100px;
+    width: 100vw; */
+    background-color: rgb(34, 97, 180);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* z-index: 1987; */
+    font-weight: 600;
+    color: white;
+    
+  }
+  #header-options div{
+    padding: 10px;
+    float: left;
+    transition: background-color 700ms;
+
+  }
+  #header-options div:hover{
+    background-color: rgb(28, 80, 148);
+    cursor: pointer;
+  }
+ .introduction-img{
+   margin-top: 60px;
+   height: 300px;
+   width: 300px;
+   margin-left: 100px;
+ }
+ #introduction-desc{
+   /* padding-left: 120px; */
+   width: 500px;
+   background-color: rgba(0, 0, 0, 0.7);
+   padding: 10px 10px 10px 10px;
+   margin-left: 800px;
+ }
+ #introduction-desc1{
+   font-size: 40px;
+ }
+ #introduction-desc2{
+   margin-top: 20px;
+   font-size: 20px;
+}
+
+#services-edit{
+  width: 500px;
+  align-items: center;
+  margin-right: 300px;
+  margin-left: 80px;
+  font-size: 20px;
+  
+}
+#services-edit-title{
+  font-size: 30px;
+}
+
+.services-img{
+  /* margin-top: 60px; */
+  /* margin-right: 50px; */
+}
+#stanley{
+  height: 500px;
+  width: 100vw;
+  background-image: url("../assets/shining.png");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: white;
+}
+#shi{
+  padding-top: 450px;
+  padding-left: 1300px;
+}
+
+#vfx{
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  background-color: #cecece;
+}
+.vfx-img{
+  margin-top: 60px;
+  height: 350px;
+  width: 600px;
+  margin-left: 100px;
+}
+#vfx-title{
+  font-size: 30px;
+}
+#vfx-desc{
+  margin-left: 100px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+
+.background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+
+.background::after {
+  content: '';
+  background: #60a9ff;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .background {
+    padding: 0 0 25px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  width: 100%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+  
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #016FF9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+.pricing-features-item {
+  border-top: 1px solid #e1f1ff;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  background-color: #48aaff;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #269aff;
+
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+ul{
+  list-style: none;
+}
+#pricing-title{
+  padding-top: 200px;
+  color: #000000;
+}
+#discover-container{
+  height: 700px;
+  width: 90vw;
+  
+  background-color: rgb(136, 136, 240);
+  margin-left: 5vw;
+}
+
+#solutions{
+  background-image: url("../assets/Batman.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+#clientes{
+  background-image: url("../assets/nolan.png");
+    background-color: #000000;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+#clientes-potenciales{
+text-justify: newspaper;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.3);
+}
+#padrino{
+  background-image: url("../assets/descarga.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+#inovacion{
+  text-justify: inter-ideograph;
+margin-left: 700px;
+margin-right: 50px;
+  font-size: 20px;
+}
+#shawshank{
+  background-image: url("../assets/fuga.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.monday-img{
+  height: 100px;
+  width: 700px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+#monday{
+    background-color: #ffffff;
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+#monday-desc{
+  text-justify: newspaper;
+}
+
+#monday-description{
+margin-left: 300px;
+margin-right: 50px;
+  font-size: 20px;
+  text-align: justify;
+}
+#goto{
+  background-color: #fff;
+  position: relative;
+    height: 500px;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+.goto-img{
+  height: 100px;
+  width: 500px;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+#goto-desc{
+  text-justify: newspaper;
+}
+#goto-description{
+  margin-left: 50px;
+  margin-right: 400px;
+    font-size: 20px;
+    text-align: justify;
+  }
